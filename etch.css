@@ -1,0 +1,29 @@
+.blockdefault {
+    background-color: grey;
+}
+.blockhovered {
+    background-color: white;
+}
+.controlui {
+    display: flex;
+    background-color: bisque;
+    height: 100px;
+    width: 720px;
+    margin: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 720px;
+    width: 720px;
+    margin: 8px;
+}
+.button {
+    display: block;
+    overflow: clip;
+}
+#resize {
+    height: 30px;
+}

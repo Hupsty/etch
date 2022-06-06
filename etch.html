@@ -11,9 +11,9 @@
 
     <div class = "controlui">
         <button id="resize" class="button" onclick="resize()">Resize</button>
+        <button id="erase" class="button" onclick="erase()">Eraser</button>
     </div>
-
-    <div class="container"></div>
+    <div class="container" onmousedown="editable()" onmouseup="uneditable()"></div>
 
     <script src="etch.js"></script>
 

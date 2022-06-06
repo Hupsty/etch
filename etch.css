@@ -1,7 +1,7 @@
 .blockdefault {
     background-color: grey;
 }
-.blockhovered {
+.blockhovered.editable {
     background-color: white;
 }
 .controlui {
@@ -10,7 +10,7 @@
     height: 100px;
     width: 720px;
     margin: 8px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .container {
@@ -23,7 +23,5 @@
 .button {
     display: block;
     overflow: clip;
-}
-#resize {
     height: 30px;
 }

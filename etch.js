@@ -67,26 +67,13 @@ function rgbrandomizer(){
     rgbr = Math.floor(Math.random() * 257);
     rgbg = Math.floor(Math.random() * 257);
     rgbb = Math.floor(Math.random() * 257);
-    rgb = "(" + rgbr + ", " + rgbg + ", " + rgbb + ")";
+    rgb = "rgb(" + rgbr + ", " + rgbg + ", " + rgbb + ")";
 }
-
-// function changehoverproperty(){
-//     colorrule.cssText = ".blockhovered.editable { background-color: " + rgb + ";}"
-// }
-
-// function colorruleinitialize(){
-//     for (let i = 0; i < stylesheet.cssRules.length; i++){
-//         if (stylesheet.cssRules[i].selectorText === ".blockhovered.editable"){
-//             colorrule = stylesheet.cssRules[i];
-//         };
-//     };
-// }
 
 function updatecolorrule (){
     stylesheet.deleteRule(1);
-    stylesheet.insertRule(`.blockhovered.editable {background-color: ${rgb} yellow}`, 1);
+    stylesheet.insertRule(`.blockhovered.editable {background-color: ${rgb}}`, 1);
 }
-
 
 let stylesheet = document.styleSheets[0];
 
@@ -96,7 +83,7 @@ let rgbr = 100;
 let rgbg = 100;
 let rgbb = 100; 
 
-let rgb = "rgb(" + rgbr + ", " + rgbg + ", " + rgbb + ")";
+var rgb = "rgb(" + rgbr + ", " + rgbg + ", " + rgbb + ")";
 
 let container = document.querySelector(".container");
 
@@ -104,7 +91,5 @@ const resizeButton = document.querySelectorAll("#resize");
 
 let cursorStatusAdd = "blockhovered";
 let cursorStatusRemove = "";
-
-// colorruleinitialize();
 
 generategrid();
